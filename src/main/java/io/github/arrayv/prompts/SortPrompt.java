@@ -3,7 +3,7 @@ package io.github.arrayv.prompts;
 import io.github.arrayv.dialogs.ImportSortDialog;
 import io.github.arrayv.frames.AppFrame;
 import io.github.arrayv.frames.UtilFrame;
-import io.github.arrayv.groovyapi.GroovyLocals;
+//import io.github.arrayv.groovyapi.GroovyLocals;
 import io.github.arrayv.main.ArrayVisualizer;
 import io.github.arrayv.main.RunSort;
 import io.github.arrayv.main.SortAnalyzer;
@@ -291,12 +291,12 @@ public final class SortPrompt extends javax.swing.JFrame implements AppFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed() {//GEN-FIRST:event_jButton1ActionPerformed
-        GroovyLocals.runGroupInThread(
+        /*GroovyLocals.runGroupInThread(
             CATEGORY_SORT_THREADS.values().stream().map(Map.Entry::getValue).reduce(Integer::sum).get(),
             () ->
                 CATEGORY_SORT_THREADS.values().stream().map(Map.Entry::getKey).forEach(Runnable::run),
             true
-        );
+        );*/
         utilFrame.jButton1ResetText();
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -324,7 +324,7 @@ public final class SortPrompt extends javax.swing.JFrame implements AppFrame {
         Map.Entry<Runnable, Integer> groupInfo = CATEGORY_SORT_THREADS.get(category);
         if (groupInfo != null) {
             arrayVisualizer.setCategory(category);
-            GroovyLocals.runGroupInThread(groupInfo.getValue(), groupInfo.getKey());
+            //GroovyLocals.runGroupInThread(groupInfo.getValue(), groupInfo.getKey());
         }
         utilFrame.jButton1ResetText();
         dispose();

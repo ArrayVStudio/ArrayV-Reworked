@@ -6,11 +6,11 @@
 
   <groupId>io.github.arrayv</groupId>
   <artifactId>ArrayV</artifactId>
-  <version>5.2-SNAPSHOT</version>
+  <version>6.0</version>
 
-  <name>ArrayV</name>
+  <name>ArrayV Reworked [WIP]</name>
   <description>Sorting algorithm visualizer written in Java</description>
-  <url>https://github.com/Gaming32/ArrayV</url>
+  <url>https://github.com/ArrayVStudio/ArrayV-Reworked</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,11 +23,6 @@
       <groupId>io.github.classgraph</groupId>
       <artifactId>classgraph</artifactId>
       <version>4.8.171</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.groovy</groupId>
-      <artifactId>groovy</artifactId>
-      <version>4.0.21</version>
     </dependency>
   </dependencies>
 
@@ -106,7 +101,6 @@
         <version>3.3.2</version>
         <configuration>
           <sourceFileIncludes>
-            <include>io/github/arrayv/groovyapi/**/*.java</include>
             <include>io/github/arrayv/main/**/*.java</include>
             <include>io/github/arrayv/sortdata/**/*.java</include>
             <include>io/github/arrayv/sorts/templates/Sort.java</include>
@@ -114,7 +108,6 @@
           </sourceFileIncludes>
           <links>
             <link>https://javadoc.io/doc/io.github.classgraph/classgraph/4.8.139</link>
-            <link>https://docs.groovy-lang.org/4.0.0/html/api</link>
           </links>
         </configuration>
         <executions>

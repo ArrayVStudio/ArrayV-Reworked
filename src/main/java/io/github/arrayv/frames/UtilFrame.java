@@ -188,11 +188,11 @@ public final class UtilFrame extends javax.swing.JFrame {
         runScriptButton.addActionListener(e -> {
             File scriptFile = new RunScriptDialog().getFile();
             if (scriptFile == null) return;
-            try {
+            /*try {
                 arrayVisualizer.getScriptManager().runInThread(scriptFile);
             } catch (IOException e1) {
                 JErrorPane.invokeErrorMessage(e1, "Run Script");
-            }
+            }*/
         });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

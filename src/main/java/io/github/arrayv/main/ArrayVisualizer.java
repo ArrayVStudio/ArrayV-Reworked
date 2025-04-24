@@ -5,8 +5,8 @@ import io.github.arrayv.dialogs.SaveArrayDialog;
 import io.github.arrayv.frames.ArrayFrame;
 import io.github.arrayv.frames.SoundFrame;
 import io.github.arrayv.frames.UtilFrame;
-import io.github.arrayv.groovyapi.ArrayVEventHandler;
-import io.github.arrayv.groovyapi.ScriptManager;
+//import io.github.arrayv.groovyapi.ArrayVEventHandler;
+//import io.github.arrayv.groovyapi.ScriptManager;
 import io.github.arrayv.panes.JErrorPane;
 import io.github.arrayv.sortdata.SortInfo;
 import io.github.arrayv.utils.Renderer;
@@ -196,7 +196,7 @@ public final class ArrayVisualizer {
     private final Timer Timer;
     private final Writes Writes;
     private final AntiQSort antiQSort;
-    private final ScriptManager scriptManager;
+    //private final ScriptManager scriptManager;
 
     private VisualStyles visualStyle;
 
@@ -437,7 +437,7 @@ public final class ArrayVisualizer {
         this.renderer = new Renderer(this);
         this.Writes = new Writes(this);
         this.antiQSort = new AntiQSort(this);
-        this.scriptManager = new ScriptManager();
+        //this.scriptManager = new ScriptManager();
 
         Highlights.postInit();
 
@@ -513,8 +513,8 @@ public final class ArrayVisualizer {
         this.ch = 0;
         this.cw = 0;
 
-        scriptManager.loadDefaultScripts();
-        scriptManager.runEventHandlers(ArrayVEventHandler.EventType.DEFAULT_SCRIPTS_INSTALLED);
+        //scriptManager.loadDefaultScripts();
+        //scriptManager.runEventHandlers(ArrayVEventHandler.EventType.DEFAULT_SCRIPTS_INSTALLED);
 
         this.arrayManager.initializeArray(this.array);
 
@@ -592,7 +592,7 @@ public final class ArrayVisualizer {
         this.Sounds.startAudioThread();
         this.drawWindows();
 
-        scriptManager.runEventHandlers(ArrayVEventHandler.EventType.ARRAYV_FULLY_LOADED);
+        //scriptManager.runEventHandlers(ArrayVEventHandler.EventType.ARRAYV_FULLY_LOADED);
     }
 
     public static ArrayVisualizer getInstance() {
@@ -806,9 +806,9 @@ public final class ArrayVisualizer {
         return this.Writes;
     }
 
-    public ScriptManager getScriptManager() {
+    /*public ScriptManager getScriptManager() {
         return scriptManager;
-    }
+    }*/
 
     public Visual[] getVisuals() {
         return this.visualClasses;
@@ -1420,7 +1420,7 @@ public final class ArrayVisualizer {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         this.window.setSize((int) (screenSize.getWidth() / 2), (int) (screenSize.getHeight() / 2));
 
-        StringBuilder title = new StringBuilder("w0rthy's Array Visualizer - ");
+        StringBuilder title = new StringBuilder("w0rthy's Array Visualizer Reworked - ");
         title.append(this.sorts.length);
         title.append(" Sorts, 15 Visual Styles, and Infinite Inputs to Sort");
         String versionName = buildInfo.getProperty("version");
