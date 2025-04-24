@@ -1,8 +1,6 @@
 # ArrayV
 
 ![Discord](https://img.shields.io/discord/592082838791127075?color=%237289DA&label=Discord&logo=discord&logoColor=white)
-[//]: # (![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Gaming32/ArrayV/maven.yml?branch=main))
-[//]: # (![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Gaming32/ArrayV/checkstyle.yml?branch=main&label=checkstyle))
 
 Over 200 sorting algorithms animated with 15 unique graphic designs
 
@@ -18,8 +16,6 @@ To run use:
 ./run
 ```
 Alternatively, you can double click on "run" or "run.bat" on Windows.
-
-[//]: # (You can always download the most up-to-date pre-built JAR from [GitHub Actions](https://nightly.link/Gaming32/ArrayV/workflows/maven/main/standalone-jar.zip) (link via [nightly.link](https://nightly.link)).)
 
 ## Legacy changelog
 
